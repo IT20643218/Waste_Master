@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Waste Master</string>
+    <string name="tw_id">Waste Master</string>
+    <string name="bt_id1">CLEANING OFFICER</string>
+    <string name="bt_id2">ROUTE MANAGEMENT</string>
+    <string name="bt_id3">MANAGE GARBAGE</string>
+    <string name="btact_id1">CREAT BIN</string>
+    <string name="btact_id2">CREATE DRIVER</string>
+    <string name="btact_id3">USER DETAILS</string>
+</resources>
