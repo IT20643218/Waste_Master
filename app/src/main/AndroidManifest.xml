@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasteMaster">
         <activity
+            android:name=".CreateBin"
+            android:exported="false" />
+        <activity
             android:name=".CleaningActivity2"
             android:exported="false" />
         <activity

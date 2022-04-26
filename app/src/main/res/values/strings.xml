@@ -7,4 +7,13 @@
     <string name="btact_id1">CREAT BIN</string>
     <string name="btact_id2">CREATE DRIVER</string>
     <string name="btact_id3">USER DETAILS</string>
+    <string name="bin_id">Create Bin</string>
+    <string name="tx_name">City</string>
+    <string name="tx2_name">Lord Type</string>
+    <string name="tx3_name">Cleaning Period</string>
+    <string name="te_loca">Select Location / Add Route Map</string>
+    <string name="btn_select">Select</string>
+    <string name="btn_sub">SUBMIT</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_dele">DELETE</string>
 </resources>

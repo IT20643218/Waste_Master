@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/home" />
 
     <TextView
-        android:id="@+id/tw_id"
+        android:id="@+id/bin_id"
         android:layout_width="236dp"
         android:layout_height="71dp"
         android:text="@string/tw_id"
