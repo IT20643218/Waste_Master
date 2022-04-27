@@ -16,4 +16,8 @@
     <string name="btn_sub">SUBMIT</string>
     <string name="btn_update">UPDATE</string>
     <string name="btn_dele">DELETE</string>
+    <string name="btact_id4">WORK REPORTS</string>
+    <string name="route_id">Route Management</string>
+    <string name="work_id">Work Reports</string>
+    <string name="btn_view">View Complants</string>
 </resources>

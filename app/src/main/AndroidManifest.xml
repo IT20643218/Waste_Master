@@ -10,8 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasteMaster">
         <activity
-            android:name=".CreateBin"
+            android:name=".ManageGarbage"
             android:exported="false" />
+        <activity
+            android:name=".WorkReport"
+            android:exported="false" />
+        <activity
+            android:name=".RouteManagement"
+            android:exported="false" />
+        <activity
+            android:name=".CreateBin"
+            android:exported="true" />
         <activity
             android:name=".CleaningActivity2"
             android:exported="false" />
