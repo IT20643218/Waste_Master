@@ -7,10 +7,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class CreateBin extends AppCompatActivity {
 
     private Button select_btn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +25,14 @@ public class CreateBin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("geo:6.927079"));
-                Intent chooser = Intent.createChooser(intent,"Lauch Maps");
+                Intent chooser = Intent.createChooser(intent,"Launch Maps");
                 startActivity(chooser);
             }
         });
     }
 
+    public void showToast(View view) {
+        Toast toast = Toast.makeText(this, "Successfully  Bin Created", Toast.LENGTH_LONG);
+        toast.show();
+    }
 }

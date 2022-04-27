@@ -20,4 +20,5 @@
     <string name="route_id">Route Management</string>
     <string name="work_id">Work Reports</string>
     <string name="btn_view">View Complants</string>
+    <string name="manage_id">Manage Garbage</string>
 </resources>
