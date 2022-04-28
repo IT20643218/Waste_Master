@@ -10,20 +10,39 @@ import android.widget.Button;
 public class Main extends AppCompatActivity {
 
     //create reference
-    Button button;
+    Button button01,button02,button03;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.bt_id1);
+        button01 = findViewById(R.id.bt_id1);
+        button02 = findViewById(R.id.btact_id1);
+        button03 = findViewById(R.id.bt_id3);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        //button cleaning officer
+        button01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(),CleaningActivity2.class);
                 startActivity(i);
+            }
+        });
+        //button route management
+        button02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(getApplicationContext(),RouteManagement.class);
+                startActivity(a);
+            }
+        });
+        //manage garbage
+        button03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent b = new Intent(getApplicationContext(),ManageGarbage.class);
+                startActivity(b);
             }
         });
 

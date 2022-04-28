@@ -18,8 +18,8 @@ public class WorkReport extends AppCompatActivity {
 
     ListView listView;
 
-    String title[] = {"Location:Boralesgamuwa","Location:Dehiwal","Location:Bellanwila","Location:Maharagama",
-    "Location:Nugegoda"};
+    String title[] = {"Malabe","Dehiwal","Bellanwila","Maharagama",
+    "Nugegoda"};
 
     String description[]={"Category:Plastic,Food Waste,Glass","Category:Glass,Food Waste","Category:Food Waste","Category:Plastic",
             "Category:Glass"};

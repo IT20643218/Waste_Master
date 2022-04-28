@@ -26,6 +26,7 @@ public class CleaningActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent a = new Intent(getApplicationContext(),WorkReport.class);
+                startActivity(a);
             }
         });
 
