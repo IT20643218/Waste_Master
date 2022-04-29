@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class CreateBin extends AppCompatActivity {
 
-    private Button select_btn;
+    private Button select_btn,submit;
 
 
     @Override
@@ -20,6 +20,15 @@ public class CreateBin extends AppCompatActivity {
         setContentView(R.layout.activity_create_bin);
 
         select_btn = findViewById(R.id.btn_select);
+        submit = findViewById(R.id.btn_sub);
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent b = new Intent(getApplicationContext(),Bin_List.class);
+                startActivity(b);
+            }
+        });
         select_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
