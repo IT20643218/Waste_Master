@@ -11,7 +11,6 @@
         android:layout_width="236dp"
         android:layout_height="39dp"
         android:hint="@string/bin_id"
-        android:text="@string/bin_id"
         android:textAlignment="center"
         android:textColor="#272222"
         android:textSize="24sp"
@@ -22,45 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.056" />
-
-    <EditText
-        android:id="@+id/tx_name"
-        android:layout_width="355dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/tx_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
-
-    <EditText
-        android:id="@+id/tx2_name"
-        android:layout_width="355dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/tx2_name"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <EditText
-        android:id="@+id/tx3_name"
-        android:layout_width="355dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/tx3_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -86,80 +46,102 @@
         app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/bin2" />
 
+
+    <EditText
+        android:id="@+id/tx_name"
+        android:layout_width="368dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <EditText
+        android:id="@+id/tx2_name"
+        android:layout_width="364dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Lord Type"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_name" />
+
+    <EditText
+        android:id="@+id/tx3_name"
+        android:layout_width="364dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Cleaning Period"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx2_name" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="364dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx3_name" />
+
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="408dp"
-        android:layout_height="216dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="429dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="224dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/home" />
-
-    <TextView
-        android:id="@+id/te_loca"
-        android:layout_width="244dp"
-        android:layout_height="48dp"
-        android:text="@string/te_loca"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
-
-    <Button
-        android:id="@+id/btn_select"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_select"
-        android:backgroundTint="#1ee605"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.404"
-        app:layout_constraintStart_toEndOf="@+id/te_loca"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
-
-    <Button
-        android:id="@+id/btn_dele"
-        android:layout_width="141dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#1ee605"
-        android:text="@string/btn_dele"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.891" />
 
     <Button
         android:id="@+id/btn_sub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="387dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#1ee605"
         android:onClick="showToast"
         android:text="@string/btn_sub"
-        android:backgroundTint="#1ee605"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_select" />
+        app:layout_constraintTop_toBottomOf="@+id/location" />
 
     <Button
-        android:id="@+id/btn_update"
-        android:layout_width="137dp"
+        android:id="@+id/btn_select"
+        android:layout_width="387dp"
         android:layout_height="48dp"
         android:backgroundTint="#1ee605"
-        android:text="@string/btn_update"
+        android:text="Open Google Map"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.891" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_sub"
+        app:layout_constraintVertical_bias="0.192" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

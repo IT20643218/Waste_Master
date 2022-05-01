@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class AddBin extends AppCompatActivity {
 
-    private EditText city, lordtype,cleaningperiod;
+    private EditText city, lordtype,cleaningperiod,location;
     private Button add;
     //private DbHandler dbHandler;
     private Context context;

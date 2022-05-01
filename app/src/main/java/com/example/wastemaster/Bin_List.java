@@ -17,7 +17,7 @@ public class Bin_List extends AppCompatActivity {
     private ListView listView;
     private TextView count;
     Context context;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,8 @@ public class Bin_List extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(context,AddBin.class));
+
+                startActivity(new Intent(context,CreateBin.class));
             }
         });
     }

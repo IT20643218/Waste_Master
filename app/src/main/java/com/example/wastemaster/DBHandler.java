@@ -1,5 +1,6 @@
 package com.example.wastemaster;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -21,6 +22,11 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String CITY = "city";
     private static final String LORD_TYPE = "lord_type";
     private static final String CLEANING_PERIOD = "cleaning_period";
+    private static final String Location = "location";
+    private static final String STARTED = "started";
+    private static final String FINISHED = "finished";
+
+    private BinModal binModal;
 
 
     public DBHandler(@Nullable Context context) {
@@ -34,7 +40,10 @@ public class DBHandler extends SQLiteOpenHelper {
                 +ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
                 +CITY + " TEXT,"
                 +LORD_TYPE + " TEXT,"
-                +CLEANING_PERIOD+ " TEXT," +
+                +CLEANING_PERIOD+ " TEXT,"
+                +Location+ "TEXT,"
+                +STARTED+ "started,"
+                +FINISHED+ "finished"+
                 ");";
 
         /* TABLE waste_master (id INTEGER PRIMARY KEY AUTOINCREMENT, city TEXT, lord_type TEXT,
@@ -55,4 +64,26 @@ public class DBHandler extends SQLiteOpenHelper {
         // Create tables again
         onCreate(db);
     }
+
+    //create method for pass the data
+    public void createBin(BinModal createBin){
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(CITY,binModal.getCity());
+        contentValues.put(LORD_TYPE,binModal.getLord_type());
+        contentValues.put(CLEANING_PERIOD,binModal.getCleaning_period());
+        contentValues.put(Location,binModal.getLocation());
+        contentValues.put(STARTED,binModal.getStarted());
+        contentValues.put(FINISHED,binModal.getFinished());
+
+        //save to table
+        sqLiteDatabase.insert(TABLE_NAME,null,contentValues);
+
+        // close database
+        sqLiteDatabase.close();
+    }
+
+
 }
