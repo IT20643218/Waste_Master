@@ -22,4 +22,21 @@
     <string name="btn_view">View Complants</string>
     <string name="manage_id">Manage Garbage</string>
     <string name="location">Location</string>
+    <string name="work_report">Work Reports</string>
+    <string name="date">Date</string>
+    <string name="workreport1">Number of Complaint</string>
+    <string name="workreport2">Total Collection Containers</string>
+    <string name="workreport3">Total Filled Containers</string>
+    <string name="workreport4">Pending Customer Complaint</string>
+    <string name="btnnewadd">Add New Work</string>
+    <string name="btnupdate">Update Work</string>
+    <string name="editworkreport">Edit Work Reports</string>
+    <string name="edit_date">Date</string>
+    <string name="search">Search Date</string>
+    <string name="editNameone">Number of Complaint</string>
+    <string name="editNametwo">Total Collection Containers</string>
+    <string name="editNametree">Total Filled Containers</string>
+    <string name="editNamefour">Pending Customer Complaint</string>
+    <string name="editbin">Update Work Reports</string>
+    <string name="deletebin">Delete Work Reports</string>
 </resources>

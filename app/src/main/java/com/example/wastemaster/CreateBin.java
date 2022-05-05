@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.wastemaster.Database.DBHandler;
+
 public class CreateBin extends AppCompatActivity {
 
     private Button select_btn,submit;

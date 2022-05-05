@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasteMaster">
         <activity
+            android:name=".Edit_Work_R"
+            android:exported="false" />
+        <activity
+            android:name=".W_Reports"
+            android:exported="false" />
+        <activity
             android:name=".EditBin"
             android:exported="false" />
         <activity
